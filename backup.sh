@@ -16,7 +16,7 @@ if [ ! -d "$destination_directory" ]; then
     mkdir -p "$destination_directory"
 fi
 
-new_destination_directory="$destination_directory/$NAME"
+new_destination_directory="$destination_directory/$NAME/"
 # Set a timestamp for the backup to distinguish between different backup versions.
 # Create the backup using rsync and ensure that files deleted from the source are also deleted in the backup.
 # Use option –-delete
